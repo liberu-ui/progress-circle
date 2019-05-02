@@ -10,7 +10,9 @@
             :style="progressStyle"/>
         <text x="50%" y="58%"
             :style="textStyle">
-            {{ tweenedProgress.toFixed(0) }}%
+            <slot name="content">
+                {{ tweenedProgress.toFixed(0) }}%
+            </slot>
         </text>
     </svg>
 </template>
