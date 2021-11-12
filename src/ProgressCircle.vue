@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import TweenLite from 'gsap/TweenLite';
+import { tween } from 'gsap';
 
 export default {
     name: 'ProgressCircle',
@@ -77,7 +77,7 @@ export default {
         progress: {
             immediate: true,
             handler(progress) {
-                TweenLite.to(this.$data, 0.2, { tweenedProgress: progress });
+                tween.to(this.$data, 0.2, { tweenedProgress: progress });
             },
         },
     },
