@@ -1,6 +1,6 @@
 {
   "name": "@enso-ui/progress-circle",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Progress Circle",
   "main": "index.js",
   "scripts": {
